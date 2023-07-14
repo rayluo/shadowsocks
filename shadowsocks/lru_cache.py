@@ -30,8 +30,12 @@ import time
 # TODO: if timeout or QPS is too large, then this cache is not very efficient,
 #       as sweep() causes long pause
 
+try:  # Python 3.10+
+    from collections.abc import MutableMapping
+except:  # Python < 3.10
+    from collections import MutableMapping
 
-class LRUCache(collections.MutableMapping):
+class LRUCache(MutableMapping):
     """This class is not thread safe"""
 
     def __init__(self, timeout=60, close_callback=None, *args, **kwargs):
