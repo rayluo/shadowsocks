@@ -1,6 +1,14 @@
 shadowsocks
 ===========
 
+> **Note**
+>
+> The new
+> [utils/bootstrap.py](utils/bootstrap.py)
+> and
+> [utils/requirements-bootstrap.txt](utils/requirements-bootstrap.txt)
+> have been added to guide you through the server setup process.
+
 [![PyPI version]][PyPI]
 [![Build Status]][Travis CI]
 
@@ -64,7 +72,7 @@ If you installed the [snap](http://snapcraft.io/) package, you have to prefix th
 like this:
 
     shadowsocks.ssserver -p 443 -k password -m aes-256-cfb
-    
+
 ### Usage with Config File
 
 [Create configuration file and run](https://github.com/shadowsocks/shadowsocks/wiki/Configuration-via-Config-File)

@@ -1,0 +1,1 @@
+https://github.com/rayluo/shadowsocks/archive/refs/heads/dev.zip
